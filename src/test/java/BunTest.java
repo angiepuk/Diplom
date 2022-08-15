@@ -7,9 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 public class BunTest {
 
-    //@Mock
-    //Bun bun;
-
     @Test
     public void test_name() {
         Bun bun = new Bun("Lada", 12);

@@ -85,11 +85,12 @@ public class BurgerTest {
         burger.addIngredient(ingredient);
         System.out.println(burger.getReceipt());
         String actual = burger.getReceipt();
-        String expected = "(==== Bulka ====)\n" +
-                "= sauce Cheese =\n" +
-                "(==== Bulka ====)\n" +
-                "\n" +
-                "Price: 26,000000\n";
+        String expected = "(==== Bulka ====)\r\n" +
+                "= sauce Cheese =\r\n" +
+                "(==== Bulka ====)\r\n" +
+                "\r\n" +
+                "Price: 26,000000\r\n";
+
         assertEquals(expected, actual);
-}
+    }
 }
