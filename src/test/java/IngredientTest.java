@@ -1,5 +1,4 @@
 import org.junit.Test;
-import org.mockito.Mock;
 import praktikum.Ingredient;
 import praktikum.IngredientType;
 
@@ -9,21 +8,21 @@ import static praktikum.IngredientType.SAUCE;
 public class IngredientTest {
 
     @Test
-    public void test_first_ingredient_type() {
+    public void testFirstIngredientType() {
         Ingredient ingredient = new Ingredient(SAUCE, "Lina", 1);
         IngredientType actual = ingredient.getType();
-        assertEquals(actual, SAUCE);
+        assertEquals(SAUCE, actual);
     }
     @Test
-    public void test_get_name(){
+    public void testGetName(){
         Ingredient ingredient = new Ingredient(SAUCE, "Lina", 1);
         String actual = ingredient.getName();
-        assertEquals(actual, "Lina");
+        assertEquals("Lina", actual);
     }
     @Test
-    public void test_get_price(){
+    public void testGetPrice(){
         Ingredient ingredient = new Ingredient(SAUCE, "Lina", 1);
         float actual = ingredient.getPrice();
-        assertEquals(actual, 1, 0.0f);
+        assertEquals(1, actual,0.0f);
     }
 }

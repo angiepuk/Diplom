@@ -1,6 +1,4 @@
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
@@ -8,16 +6,16 @@ import static org.junit.Assert.assertEquals;
 public class BunTest {
 
     @Test
-    public void test_name() {
+    public void testName() {
         Bun bun = new Bun("Lada", 12);
         String actual = bun.getName();
-        assertEquals(actual, "Lada");
+        assertEquals("Lada", actual);
     }
 
     @Test
-    public void test_price() {
+    public void testPrice() {
         Bun bun = new Bun("Lada", 12);
         float actual = bun.getPrice();
-        assertEquals(actual, 12,  0.0f);
+        assertEquals(12, actual,0.0f);
     }
 }
